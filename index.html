@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="h-100">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,8 +13,120 @@
   <title>Listagem Pokemon</title>
 </head>
 
-<body>
-  <h1>Titulo Inicial</h1>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-base">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assets/img/pokemon-logo.png" alt="" srcset=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ver Todos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ver Tipos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Normal</a></li>
+              <li><a class="dropdown-item" href="#">Água</a></li>
+              <li><a class="dropdown-item" href="#">Fogo</a></li>
+              <li><a class="dropdown-item" href="#">Grama</a></li>
+              <li><a class="dropdown-item" href="#">Elétrico</a></li>
+              <li><a class="dropdown-item" href="#">Voador</a></li>
+              <li><a class="dropdown-item" href="#">Pedra</a></li>
+              <li><a class="dropdown-item" href="#">Terra</a></li>
+              <li><a class="dropdown-item" href="#">Psíquico</a></li>
+              <li><a class="dropdown-item" href="#">Fantasma</a></li>
+              <li><a class="dropdown-item" href="#">Inseto</a></li>
+              <li><a class="dropdown-item" href="#">Gelo</a></li>
+              <li><a class="dropdown-item" href="#">Dragão</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <section class="col-12">
+        <h1 class="display-2 titulo-principal text-center pt-4">Veja todos os 150!!</h1>
+        <h2 class="h2 text-center"> Listagem de todos os pokémon da região de Kanto</h2>
+      </section>
+    </div>
+  </div>
+
+  <div class="bg-pikachu bg-light">
+  <div class="container">
+    <div class="row py-4">
+      <section class="col-12">
+        <h3 class="h3 text-center">Pokémon em Destaque</h3>
+      </section>
+      <section class="col-lg-4">
+        <div class="card">
+          <img src="./assets/img/pikachu-bg.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nome Pokémon 1</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Tipo Pokemon</h6>
+            <p class="card-text">Descrição Pokémon</p>
+            <a href="#" class="btn btn-primary">Link Extra</a>
+          </div>
+        </div>
+      </section>
+      <section class="col-lg-4">
+        <div class="card">
+          <img src="./assets/img/pikachu-bg.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nome Pokémon 1</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Tipo Pokemon</h6>
+            <p class="card-text">Descrição Pokémon</p>
+            <a href="#" class="btn btn-primary">Link Extra</a>
+          </div>
+        </div>
+      </section>
+      <section class="col-lg-4">
+        <div class="card">
+          <img src="./assets/img/pikachu-bg.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nome Pokémon 1</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Tipo Pokemon</h6>
+            <p class="card-text">Descrição Pokémon</p>
+            <a href="#" class="btn btn-primary">Link Extra</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <p class="mb-0 text-light">2022 BBM Projects</p>
+        </div>
+        <div class="col-6 text-end">
+          <img class="" src="./assets/img/starters.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
