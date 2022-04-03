@@ -1,0 +1,19 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.navbar-base{
+  background-color: #C71F25;
+  border-bottom: solid 4px #000;
+  font-family: 'Fredoka One', cursive;
+}
+
+.titulo-principal{
+  font-family: 'Fredoka One', cursive;
+}
+
+.bg-pikachu {
+  background-image: url('../img/bg-pikachu-1.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
